@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>immobilier en ligne</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normaliser.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Courtier Immobilier en ligne</title>
+  </head>
+  <body>
     <div class="container">
-        <div>
-            <h3>Choisi le rayon de recherche :</h3>
-                <select class="options">
-                        <option>rayon de recherche</option>
-                        <option>5km</option>
-                        <option>10km</option>
-                        <option>20km</option>
-                        <option>50km</option>
-                        <option>100km</option>
-                        <option>200km</option>
-                </select>
+      <div class="left">
+        <div class="image">
+          <img src="Images/House.png" alt="Home" />
         </div>
-
-        <div>
-            <h3>forchette de prix :</h3>
-                        <input type="number" name="num" placeholder="le prix manimum">
-                        <input type="number" name="num" placeholder="le prix maximum">
+        <div class="quote">
+          <p>
+            Trouver la maison de vos rêves est maintenant plus facile avec notre
+            formulaire
+          </p>
         </div>
-
-        <div>
-            <h3>choisi le nombre de chambres :</h3>
-                <select class="options">
-                        <option>chambres</option>
-                        <option>un chambre</option>
-                        <option>deux chambres</option>
-                        <option>trois chambres</option>
-                        <option>quatre chambres</option>
-                        <option>cinq chambres</option>
-                        <option>six chambres</option>
-                </select>
+      </div>
+      <div class="right">
+        <h1>Trouvez La Maison De Vos Rêves</h1>
+        <label for="search">Choisi le rayon de recherche :</label>
+        <div class="search">
+          <select name="Search">
+            <option value="Value1">2km - 5km</option>
+            <option value="Value2">5Km - 10km</option>
+            <option value="Value3">10km - 20Km</option>
+            <option value="Value4">20km - 30km</option>
+            <option value="Value5">30km - 40km</option>
+          </select>
         </div>
-        <div>
-            <h3>choisi le type de propriété :</h3>
-                <select class="options">
-                        <option>type de propriété</option>
-                        <option>Villa</option>
-                        <option>Appartement</option>
-                        <option>Maison</option>
-                </select>
-            </div>
-                <br>
-                <br>
-        <button>chercher</button>
+        <label for="price">Forchette de prix :</label>
+        <div class="price">
+          <input type="number" placeholder="le prix minimum" />
+          <input type="number" placeholder="le prix maximum" />
+        </div>
+        <label for="Chamber">Choisi Combien Du Chambres :</label>
+        <div class="chamber">
+          <select name="chamber">
+            <option value="value1">Une Chambre</option>
+            <option value="Value2">Deux Chambres</option>
+            <option value="Value3">Trois Chambres</option>
+            <option value="Value4">Quatre Chambres</option>
+            <option value="Value5">Cinq Chambres</option>
+          </select>
+        </div>
+        <label for="type of property">Choisi Le Type De Propriété</label>
+        <div class="type-of-property">
+          <select name="Type of property">
+            <option value="Value1">Villa</option>
+            <option value="Value2">Appartemet</option>
+            <option value="Value3">Maison</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <label for="checkbox">Include les maisons vendu</label>
+          <input type="checkbox" name="checkbox" />
+        </div>
+        <button>Cherche</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
